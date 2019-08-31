@@ -1,6 +1,9 @@
+
 def extarct():
+
 	import main, re
-	expr = r'\busername\b.:..............'
 	opFile = open('txt/in.txt', "r").read()
-	searcher = re.findall(expr, opFile)
-	print(searcher)
+	writer = open('txt/usernames.txt', "w")
+	searcher = re.findall(r'\busername\b.:..............', opFile)
+	writer.write(str(searcher))
+	print('result: '+str(searcher))
