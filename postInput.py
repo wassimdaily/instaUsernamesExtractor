@@ -1,0 +1,1 @@
+post = raw_input('Enter the post url: ')
